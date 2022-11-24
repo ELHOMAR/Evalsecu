@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evasecu.com</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <div class="n-name" className="n-name" style="font-size: 40px">Evalsecu.</div>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="pourquoi.html">Pourquoi Evalsecu?</a></li>
+                <li><a href="#">Qui sommes-nous</a></li>
+                <li><a href="#">Nous contacter</a></li>
+                <li id="lg-user"><a href="#"><i class="fa fa-user"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="saisit-info">
+        <div class="wrapper">
+            <h2>Veuillez saisir vos Informations</h2>
+            <form action="connection.php" method="post">
+                <!--Account Information Start-->
+                <p>Les informations marquées par * sont obligatoires</p>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="text" placeholder="Nom*" required class="name">
+                        <i class="fa fa-user icon"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="text" placeholder="Prenom*" required class="name">
+                        <i class="fa fa-user icon"></i>
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="email" placeholder="email*" required class="name">
+                        <i class="fa fa-envelope icon"></i>
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="text" placeholder="Nom de l'entreprise*" required class="name">
+                        <i class="fa fa-institution icon"></i>
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="text" placeholder="Adresse de l'entreprise*" required class="name">
+                        <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="text" placeholder="Numero de téléphone professionel" required class="name">
+                        <i class="fa fa-phone icon " aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="text" placeholder="Pays" required class="name">
+                        <i class="fa fa-institution icon"></i>
+                    </div>
+                </div>
+                <a href="index.html"><button type="submit" name="valider" class="suivant-info">Suivant</button></a>
+    </section>
+
+
+    <section id="header2">
+        <div class="n-name2" className="n-name" style="font-size: 40px">Evalsecu.</div>
+        <div class="div-footer-a">
+            <a href="pourquoi.html">Pourquoi Evalsecu?</a>
+            <a href="#">Qui somme-nous</a>
+            <a href="#">Nous contacter</a>
+            <img src="6.png" class="logo-ansi">
+        </div>
+        <div class="copyright">
+            <p>Copyright 2022@, Tout droit réservé.</p>
+        </div>
+    </section>
+</body>
+
+</html>

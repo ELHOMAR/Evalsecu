@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+h1
+{
+    font-size:50px ;
+    line-height:64px ;
+    color: #222;
+}
+h2
+{
+    font-size:46px ;
+    line-height:54px ;
+    color: #222;
+}
+h4
+{
+    font-size:20px ;
+    color: #222;
+    margin-left: 75px;
+    margin-top: 20px;
+}
+h6
+{
+    font-weight: 700;
+    font-size:12px;
+}
+p
+{
+    font-size:16px ;
+    margin: 15px 0 20px 0 ;
+    display: inline-block;
+}
+body{
+    width: 100%;
+}
+
+#header {
+    display : flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:20px 80px ;
+    background: #327dc4;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index:  999; 
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#navbar li{
+    list-style: none;
+    position: relative;
+    padding: 0 20px;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #000000;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 15px;
+    height: 3px;
+    background:#000000;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+.n-name{
+    color: #ffffff;
+}
+.btn-eval{
+    margin-left: 1200px;
+    display: block;
+    color: #ffffff;
+    background-color: #327dc4;
+    font-size: 20px;
+    border: none;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 100px;
+    font-weight: bold;
+}
+.btn-eval:hover{
+    background-color: #243e56;
+    color: white; 
+}
+.btn-eval:active{
+    opacity: 0.3;
+}
+.imgs-acceuil{
+    vertical-align: middle;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.img1{
+    width: 150px;
+    margin-right: 70px;
+}
+.img2{
+    width: 150px;
+    margin-left: 90px;
+    
+}
+.img3{
+    width: 150px;
+    margin-left: 200px;
+}
+.les-para-acceuil{
+    margin-left: 30px;
+}
+.p1{
+    margin-left: 6px;
+    color: #327dc4;
+    font-weight: bold;
+}
+.p2{
+    margin-left: 25px;
+    color: #327dc4;
+    font-weight: bold;
+}
+.p3{
+    margin-left: 25px;
+    color: #327dc4;
+    font-weight: bold;   
+}
+
+#header2{
+    background: #327dc4;
+    margin-top: 200px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.n-name2{
+    color: #ffffff;
+    display: block;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+.div-footer-a{
+    vertical-align: middle;
+}
+#header2 a{
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 30px;
+    cursor: pointer;
+}
+#header2 a:hover{
+    color: #000000;
+}
+.logo-ansi{
+    width: 200px;
+    margin-left: 700px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.span-identify{
+    margin-left: 75px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: dotted;
+    display: block;
+}
+.p1-identify,
+.p2-identify,
+.p3-identify{
+    margin-left: 75px;
+    display: block;
+    font-weight:500;
+}
+.saisit-info{
+    padding-top: 40px;
+}
+.wrapper{
+    background-color:#327dc4;
+    width: 500px;
+    padding: 25px;
+    margin: 25px auto 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5) ;
+    border-radius: 10px;
+    padding-bottom: 110px;
+    margin-bottom: 110px;
+}
+.wrapper h2 {
+    background-color: #fcfcfc;
+    color: #000000;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+    border: 1px dashed #088178;
+}
+.wrapper h4 {
+    padding-bottom: 5px;
+    color: #000000;
+}
+.input_group {
+    margin-bottom: 8px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+.input_box {
+    width: 100%;
+    margin-right: 12px;
+    position: relative;
+}
+.input_box:last-child {
+    margin-right: 0;
+}
+.input_box .name {
+    padding: 14px 10px 14px 50px;
+    width: 100%;
+    background-color: #fcfcfc;
+    border: 1px solid #0003;
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 3px;
+    color: #333;
+}
+.input_box .name:focus, .dob:focus {
+    -webkit-box-shadow: 0 0 2px 1px #088178;
+    -moz-box-shadow: 0 0 2px 1px #088178;
+    box-shadow: 0 0 2px 1px #088178;
+    border: 1px solid #088178;
+}
+.input_box .icon {
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    color: #333;
+    background-color: #f1f1f1;
+    border-radius: 2px 0 0 2px;
+    transition: 0.3s;
+    font-size: 20px;
+    pointer-events: none;
+    border: 1px solid #00000003;
+    border-right: none;
+}
+
+.name:focus+.icon {
+    background-color:#327dc4;
+    color: #fff;
+    border-right: 1px solid #088178;
+    border: none;
+    transition: 1s;
+}
+.suivant-info{
+    font-size: 17px;
+    border: none;
+    width: 450px;
+    margin-top: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #327dc4;
+    font-weight: bold;
+}
+.suivant-info:hover{
+    background-color: #E3E6F3;
+    color:#327dc4
+}
+.identify{
+    text-align: center;
+}
+.identify h2{
+    margin-top: 40px;
+}
+.identify p{
+    font-size: 30px;
+}
+.para-questionId{
+    background-color: #327dc4;
+    color: #f1f1f1;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+.choix-id1,
+.choix-id2{
+    transform: scale(4);
+    margin-top: 50px;
+    width: 70px;
+}
+.label-choix{
+    font-size: 25px;
+    font-weight: bold;
+}
+.choix-id2{
+    margin-left: 8px;
+}
+.suivant-id{
+    font-size: 30px;
+    margin-top: 60px;
+    border: none;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: #327dc4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.suivant-id:hover{
+    background-color: #243e56;
+    color: white;
+}
+.suivant-id:active{
+    opacity: 0.3;
+}
+#barCanvas{
+    margin-top: 50px;
+    
+}
+.chart_contenair{
+    width: 1000px;
+    margin-left:280px;
+}
